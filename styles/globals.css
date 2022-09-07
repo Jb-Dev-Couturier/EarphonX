@@ -25,14 +25,19 @@ width: 100%;
 
 }
 .layout{
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
+  padding: 6px 18px;
   position: relative;
+  background: #ffffffbb;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom:1px solid #f02d34;
+  margin-bottom: 10px;
 }
 .marquee-text{
   font-size: 29px;
@@ -67,9 +72,19 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
-  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  -webkit-text-stroke:1px #f02d34;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.logo>svg{
+  font-size: 40px;
+  color: #f02d34;
+  stroke: #ffffff;
 }
 .cart-icon{
   font-size: 25px;
@@ -83,10 +98,16 @@ width: 100%;
 .cart-icon:hover{
   transform: scale(1.1,1.1);
 }
+.cart-icon>svg{
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  stroke:#f02d34;
+}
 .cart-item-qty{
   position: absolute;
   right: -8px;
-  font-size: 12px;
+  font-size: 14px;
   color: #eee;
   background-color: #f02d34;
   width: 18px;
@@ -94,7 +115,6 @@ width: 100%;
   border-radius: 50%;
   text-align: center;
   font-weight: 600;
-
 }
 .products-container{
   display: flex;
@@ -311,6 +331,11 @@ text-align: end;
   font-size: 30px;
   display: flex;
   gap: 10px;
+}
+
+.footer-container .copy-icon{
+  font-size: 15px;
+  color: #f02d34;
 }
  .cart-heading{
   display: flex;

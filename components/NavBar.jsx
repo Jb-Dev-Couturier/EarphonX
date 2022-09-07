@@ -1,9 +1,24 @@
 import React from 'react'
+import Link from 'next/link'
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
+import AppleIcon from '@mui/icons-material/Apple';
+
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
-  )
+    <div className="navbar-container">
+      <p className='logo'>
+        <Link href="/">
+          <AppleIcon />
+        </Link>
+        EarphonX
+      </p>
+      <button type='button' className='cart-icon' onClick={""}>
+        <ShoppingCartRoundedIcon/>
+        <span className='cart-item-qty'>1</span>
+      </button>
+    </div>
+  );
 }
 
 export default NavBar
