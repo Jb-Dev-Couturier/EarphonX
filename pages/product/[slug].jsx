@@ -29,6 +29,7 @@ const ProductDetails = ({ product, products }) => {
               <img
                 src={urlFor(item)}
                 alt={name}
+                key={i}
                 className={
                   i === index ? 'small-image selected-image' : 'small-image'
                 }
@@ -58,7 +59,7 @@ const ProductDetails = ({ product, products }) => {
               <span className="minus" onClick={decQty}>
                 <RemoveCircleOutlineOutlinedIcon />
               </span>
-              <span className="num" onClick="">
+              <span className="num">
                 {qty}
               </span>
               <span className="plus" onClick={incQty}>

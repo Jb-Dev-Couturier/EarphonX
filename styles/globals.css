@@ -147,6 +147,7 @@ span.text-red {
   background-color: #ebebeb;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  object-fit: contain;
 }
 
 .product-name {
@@ -309,7 +310,7 @@ span.text-red {
 .cart-container {
   height: 100vh;
   width: 600px;
-  background-color: white;
+  background-color: rgb(223, 223, 223);
   float: right;
   padding: 40px 10px;
   position: relative;
@@ -360,6 +361,12 @@ span.text-red {
   margin: 40px;
   text-align: center;
 }
+.empty-cart>svg{
+  font-size: 100px;
+  color: #fff;
+  stroke: #f02d34;
+  stroke-width: .05rem;
+}
 .empty-cart h3 {
   font-weight: 600;
   font-size: 20px;
@@ -372,6 +379,7 @@ span.text-red {
   overflow: auto;
   max-height: 70vh;
   padding: 20px 10px;
+  
 }
 .product {
   display: flex;
@@ -383,12 +391,13 @@ span.text-red {
   height: 150px;
   border-radius: 15px;
   background-color: #ebebeb;
+  object-fit: contain;
 }
 .item-desc .flex {
   display: flex;
   justify-content: space-between;
   width: 350px;
-  color: #e4e4e4;
+  color: #242424;
 }
 .item-desc .bottom {
   margin-top: 60px;
@@ -424,6 +433,7 @@ span.text-red {
 .btn-container {
   width: 400px;
   margin: auto;
+  
 }
 .btn {
   width: 100%;
@@ -440,9 +450,18 @@ span.text-red {
   cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .btn:hover {
   transform: scale(1.1, 1.1);
+}
+.btn>.credit-icon{
+  font-size: 35px;
+  stroke: #fff;
+  color: #f02d34;
+  font-weight: bold;
 }
 .product-detail-container {
   display: flex;
@@ -455,7 +474,7 @@ span.text-red {
 .product-detail-image {
   border-radius: 15px;
   background-color: #ebebeb;
-
+  object-fit: contain;
   width: 300px;
   height: 300px;
   cursor: pointer;
@@ -468,6 +487,7 @@ span.text-red {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  object-fit: contain;
 }
 .small-image {
   border-radius: 8px;
@@ -475,6 +495,7 @@ span.text-red {
   width: 70px;
   height: 70px;
   cursor: pointer;
+  object-fit: contain;
 }
 
 .selected-image {
@@ -559,6 +580,7 @@ span.text-red {
 .quantity-desc {
   border: 1px solid gray;
   padding: 6px;
+  border-radius: 15px;
 }
 .quantity-desc span {
   font-size: 16px;
