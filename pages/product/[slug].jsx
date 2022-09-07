@@ -1,4 +1,4 @@
-import React,{useState}from 'react';
+import React, { useState } from 'react';
 
 import { client, urlFor } from '../../lib/client';
 import ControlPointOutlinedIcon from '@mui/icons-material/ControlPointOutlined';
@@ -7,12 +7,18 @@ import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
 import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
 
 import { Product } from '../../components';
-import {useStateContext}from '../../context/StateContext'
+import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
-  const [index, setIndex] = useState(0) 
-  const {decQty, incQty,qty,onAdd} = useStateContext()
+  const [index, setIndex] = useState(0);
+  const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+
+  const handleBuyNow = () => {
+    onAdd(product, qty);
+
+    setShowCart(true);
+  };
   return (
     <div>
       <div className="product-detail-container">
@@ -59,19 +65,21 @@ const ProductDetails = ({ product, products }) => {
               <span className="minus" onClick={decQty}>
                 <RemoveCircleOutlineOutlinedIcon />
               </span>
-              <span className="num">
-                {qty}
-              </span>
+              <span className="num">{qty}</span>
               <span className="plus" onClick={incQty}>
                 <ControlPointOutlinedIcon />
               </span>
             </p>
           </div>
           <div className="buttons">
-            <button type="button" className="add-to-cart" onClick={()=>onAdd(product,qty)}>
+            <button
+              type="button"
+              className="add-to-cart"
+              onClick={() => onAdd(product, qty)}
+            >
               Ajout Panier
             </button>
-            <button type="button" className="buy-now" onClick="">
+            <button type="button" className="buy-now" onClick={handleBuyNow}>
               Achat Immédiat
             </button>
           </div>

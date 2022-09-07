@@ -6,7 +6,7 @@ import {Product,FooterBanner,HeroBanner} from '../components'
 const Home = ({product,bannerData}) => {
   return (
     <>
-      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+      <HeroBanner heroBanner={bannerData.length && bannerData[1]} />
         <div className="products-heading">
           <h2>Nos Meilleures Ventes</h2>
           <p>Disponible en plusieurs Versions</p>

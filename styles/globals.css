@@ -630,7 +630,6 @@ span.text-red {
 }
 .success-wrapper,
 .cancel-wrapper {
-  background-color: white;
   min-height: 60vh;
 }
 .success,
@@ -649,7 +648,10 @@ span.text-red {
 
 .success .icon {
   color: green;
-  font-size: 40px;
+  
+}
+.success .icon>svg{
+font-size: 40px;
 }
 .success h2 {
   text-transform: capitalize;
@@ -657,6 +659,7 @@ span.text-red {
   font-weight: 900;
   font-size: 40px;
   color: #ffffff;
+  -webkit-text-stroke: 1px #f02d34;
 }
 .success .email-msg {
   font-size: 16px;
