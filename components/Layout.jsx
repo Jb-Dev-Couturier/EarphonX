@@ -9,7 +9,7 @@ const Layout = ({children}) => {
       <Head>
         <meta charSet="utf-8" />
         <title>
-          ErphonX. Site E-commerce specialisé technologie haut de Gamme Iphone
+          EarphonX. Site E-commerce specialisé technologie haut de Gamme Iphone
         </title>
         <link rel="shortcut icon" type="image/png" href="./icon.webp" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
