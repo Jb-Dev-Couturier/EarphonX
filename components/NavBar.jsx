@@ -11,7 +11,10 @@ const NavBar = () => {
         <Link href="/">
           <AppleIcon />
         </Link>
-        EarphonX
+        <Link href="/" className='textNavbar'>
+
+        <span>EarphonX</span>
+        </Link>
       </p>
       <button type='button' className='cart-icon' onClick={""}>
         <ShoppingCartRoundedIcon/>
