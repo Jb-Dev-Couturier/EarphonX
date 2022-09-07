@@ -22,7 +22,7 @@
   "resolved" "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.19.0.tgz"
   "version" "7.19.0"
 
-"@babel/core@^7.0.0", "@babel/core@^7.0.0-0":
+"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.19.0":
   "integrity" "sha512-reM4+U7B9ss148rh2n1Qs9ASS+w94irYXga7c2jaQv9RVzpS7Mv1a9rnYYwuDa45G+DkORt9g6An2k/V4d9LbQ=="
   "resolved" "https://registry.npmjs.org/@babel/core/-/core-7.19.0.tgz"
   "version" "7.19.0"
