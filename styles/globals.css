@@ -100,7 +100,7 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 50px;
   margin-top: 20px;
   width: 100%;
 }
@@ -226,6 +226,7 @@ text-align: end;
 .banner-desc{
   display: flex ;
   justify-content: space-between;
+  
 }
 .banner-desc button{
   border-radius: 15px;
@@ -248,12 +249,17 @@ text-align: end;
 }
 .footer-banner-image{
   position: absolute;
+  z-index: 0;
   /* top: -35%;
   left: 8%; */
   top: -25%;
   left: 25%;
 }
+.banner-desc .left{
+  z-index: 10;
+}
 .banner-desc .right{
+  z-index: 10;
   line-height: 1.4;
 }
 .banner-desc .right h3{
