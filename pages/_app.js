@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <StateContext>
       <Layout>
-        <Toaster/>
+        <Toaster position="top-center" reverseOrder={true} />
         <Component {...pageProps} />
       </Layout>
     </StateContext>
